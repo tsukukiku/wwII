@@ -408,7 +408,7 @@ function renderPhaseControls(game, unit, target) {
         <div class="attack-list">
           ${state.cards.attacks.map((card) => {
             const preview = unit && target ? attackPreview(unit, target, card.id) : { usable: false, reason: "未選択" };
-            const disabled = unit?.attackedThisTurn || !preview.usable;
+            const disabled = unit?.attackedThisTurn;
             return `
               <button class="${disabled ? "disabled-card" : ""} ${state.hoverAttackId === card.id ? "preview-card" : ""}" data-attack="${card.id}" ${disabled ? "disabled" : ""} title="${unit?.attackedThisTurn ? "このターン攻撃済みです。" : preview.usable ? card.description : preview.reason}">
                 <span>${card.name}</span>
@@ -730,6 +730,7 @@ function bindBattle() {
     commitGame(useAction(state.game, button.dataset.actionCard));
   });
   bindAll("[data-attack]", "click", (button) => {
+    state.hoverAttackId = null;
     commitGame(attack(state.game, button.dataset.attack));
   });
   bindAll("[data-attack]", "mouseenter", (button) => {
