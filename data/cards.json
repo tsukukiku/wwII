@@ -1,0 +1,68 @@
+{
+  "attacks": [
+    {
+      "id": "vertical-boom-zoom",
+      "name": "垂直一撃離脱",
+      "condition": "隣接 / 自機ALT > 敵ALT",
+      "description": "敵機と隣接し、自機ALTが敵ALTより高い時に実行可能。ダメージはATK+ALT差。攻撃後、自機ALTを敵ALTまで下げ、下げたALT×2だけSPDを得て、敵を通過する形で移動する。"
+    },
+    {
+      "id": "horizontal-boom-zoom",
+      "name": "水平一撃離脱",
+      "condition": "2マス以内 / ALT差1以内 / 自機SPD > 敵SPD",
+      "description": "敵機と2マス以内、ALT差が1以内、自機SPDが敵SPDより高い時に実行可能。ダメージはATK+SPD差。攻撃後、敵を通過する形で移動する。"
+    },
+    {
+      "id": "turn-fight",
+      "name": "横旋回戦",
+      "condition": "隣接 / ALT差1以内",
+      "description": "敵機と隣接し、ALT差が1以内の時に実行可能。AGI差分のダメージを与え、攻撃後に自機SPDを2失う。"
+    },
+    {
+      "id": "vertical-turn",
+      "name": "縦旋回戦",
+      "condition": "隣接 / ALT差2以内",
+      "description": "敵機と隣接し、ALT差が2以内の時に実行可能。ダメージは自機SPD+自機ALT-敵SPD-敵ALT。攻撃後に自機ALTとSPDを1ずつ失う。"
+    },
+    {
+      "id": "head-on",
+      "name": "ヘッドオン",
+      "condition": "隣接 / ALT差1以内",
+      "description": "敵機と隣接し、ALT差が1以内の時に実行可能。敵にATK-敵AGI/2のダメージを与え、自機は敵ATK/2の反撃ダメージを受ける。"
+    }
+  ],
+  "actions": [
+    {
+      "id": "scissors",
+      "name": "シザース",
+      "description": "次に受けるダメージを1軽減し、SPD-1。"
+    },
+    {
+      "id": "barrel-roll",
+      "name": "バレルロール",
+      "description": "失速中でなければ、次の被ダメージを2軽減する。"
+    },
+    {
+      "id": "dive-away",
+      "name": "急降下離脱",
+      "description": "ALT-1、SPD+2。距離を取りたい時に使う。"
+    },
+    {
+      "id": "immelmann",
+      "name": "インメルマンターン",
+      "description": "SPD-1、ALT+1。向きを反転する。"
+    }
+  ],
+  "tactics": [
+    {
+      "id": "energy-check",
+      "name": "エネルギー確認",
+      "description": "選択中の機体のALTまたはSPDを+1。"
+    },
+    {
+      "id": "cloud-cover",
+      "name": "雲を使う",
+      "description": "このターン、選択中の機体の被ダメージを1軽減する。"
+    }
+  ]
+}

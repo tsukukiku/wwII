@@ -1,0 +1,15 @@
+[
+  {
+    "id": "battle-of-britain",
+    "name": "バトル・オブ・ブリテン",
+    "description": "英本土上空。RAFは高度と速度を整え、ドイツ軍航空隊を迎撃する。",
+    "forceSize": 6,
+    "costLimit": 42,
+    "playerNation": "RAF",
+    "enemyNation": "Luftwaffe",
+    "availablePlayerAircraft": ["spitfire-mkia", "hurricane-mkia", "typhoon-mkia"],
+    "enemyAircraft": ["bf109f-4", "bf109f-4", "bf110c", "ju87", "do217", "bf110c"],
+    "victory": "敵航空隊を全滅させる",
+    "map": { "width": 13, "height": 30 }
+  }
+]

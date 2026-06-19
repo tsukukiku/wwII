@@ -1,0 +1,58 @@
+[
+  {
+    "id": "spitfire-mkia",
+    "name": "Spitfire Mk Ia",
+    "nation": "RAF",
+    "type": "格闘戦型",
+    "cost": 7,
+    "stats": { "maxHP": 14, "maxSPD": 7, "atk": 2, "agi": 9 }
+  },
+  {
+    "id": "hurricane-mkia",
+    "name": "Hurricane Mk Ia",
+    "nation": "RAF",
+    "type": "格闘戦型",
+    "cost": 7,
+    "stats": { "maxHP": 16, "maxSPD": 8, "atk": 2, "agi": 5 }
+  },
+  {
+    "id": "typhoon-mkia",
+    "name": "Typhoon Mk Ia",
+    "nation": "RAF",
+    "type": "一撃離脱型",
+    "cost": 7,
+    "stats": { "maxHP": 18, "maxSPD": 9, "atk": 3, "agi": 7 }
+  },
+  {
+    "id": "bf109f-4",
+    "name": "Bf109F-4",
+    "nation": "Luftwaffe",
+    "type": "エネルギー戦型",
+    "cost": 7,
+    "stats": { "maxHP": 15, "maxSPD": 9, "atk": 3, "agi": 6 }
+  },
+  {
+    "id": "bf110c",
+    "name": "Bf110C",
+    "nation": "Luftwaffe",
+    "type": "迎撃機型",
+    "cost": 7,
+    "stats": { "maxHP": 25, "maxSPD": 8, "atk": 5, "agi": 3 }
+  },
+  {
+    "id": "ju87",
+    "name": "Ju87",
+    "nation": "Luftwaffe",
+    "type": "一撃離脱型",
+    "cost": 7,
+    "stats": { "maxHP": 7, "maxSPD": 7, "atk": 3, "agi": 7 }
+  },
+  {
+    "id": "do217",
+    "name": "Do217",
+    "nation": "Luftwaffe",
+    "type": "迎撃機型",
+    "cost": 7,
+    "stats": { "maxHP": 7, "maxSPD": 7, "atk": 3, "agi": 7 }
+  }
+]

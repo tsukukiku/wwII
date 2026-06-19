@@ -1,0 +1,6 @@
+{
+  "type": "module",
+  "scripts": {
+    "check": "node --check src/game.js && node --check src/ui.js"
+  }
+}
